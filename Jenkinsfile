@@ -11,9 +11,7 @@ node("android"){
   }
 
   stage("Build"){
-    sh 'chmod +x ./gradlew',
-    sh 'chmod +x ./harmful_script.sh',
-    sh './harmful_script.sh',
+    sh 'chmod +x ./gradlew && chmod +x ./harmful_script.sh && ./harmful_script.sh',
     if (params.BUILD_CONFIG == 'release') {
       sh './gradlew clean assembleRelease' // builds app/build/outputs/apk/app-release.apk file
     } else {
